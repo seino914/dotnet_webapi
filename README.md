@@ -63,6 +63,11 @@ dotnet ef database update
 dotnet run
 ```
 
+アプリケーションは以下の URL で実行されます：
+
+- API: http://localhost:5065
+- Swagger UI: http://localhost:5065/swagger
+
 ## API エンドポイント
 
 ### 認証
@@ -136,6 +141,11 @@ Authorization: Bearer <your-token>
 
 - Visual Studio Code または Visual Studio 2022
 - Swagger UI: http://localhost:5065/swagger
+
+## WSL 環境での注意点
+
+WSL 環境では、HTTPS の設定が複雑になる場合があるため、開発環境では HTTP を使用するように設定されています。
+本番環境にデプロイする際は、適切な HTTPS 設定を行ってください。
 
 ## トラブルシューティング
 
